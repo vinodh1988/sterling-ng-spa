@@ -1,0 +1,28 @@
+#container{
+    overflow:hidden;
+}
+
+#main-area{
+    float:left;
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 20px;
+    min-height: 500px;
+    box-sizing:border-box;
+}
+#sidebar{
+    float:left;
+    background-color: rgb(36, 34, 34);
+    width: 30%;
+    padding: 10px;
+    min-height: 500px;
+    box-sizing:border-box;
+}
+
+#footer{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial;
+    background-color: rgb(36, 34, 34);
+}

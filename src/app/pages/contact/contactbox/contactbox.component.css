@@ -1,0 +1,20 @@
+.box{
+    border: 2px solid rgb(110, 92, 92);
+    border-radius: 5px;
+    padding: 10px;
+    float: left;
+    margin: 20px;
+    width: 330px;
+
+}
+
+h3{
+    margin: 10px;
+    color: rgb(97, 91, 91);
+    font-family:arial;
+}
+
+address{
+    font-family: consolas;
+    color: rgb(131, 127, 127);
+}
