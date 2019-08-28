@@ -9,7 +9,17 @@ import { course } from 'src/app/model/course';
 })
 export class HomeComponent implements OnInit {
 courses:course[]=[];
+range:string="All";
   constructor(private cs:CourseService) { 
+
+    /*  this.cs.getCourses().subscribe(
+        function(data:course[]){
+            this.courses=data;
+        }.bind(this),
+        function(){
+
+        }
+      )*/
       this.cs.getCourses().subscribe(
          (data:course[])=>this.courses=data,
          ()=>this.courses=[]

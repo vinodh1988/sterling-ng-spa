@@ -1,0 +1,10 @@
+{
+    "VARS":{
+        "Home" :"Home",
+        "Courses":"Courses",
+        "Reviews":"Reviews",
+        "Schedule":"Schedule",
+        "Contact":"Contact Us",
+        "Videos": "Videos"
+    }
+}

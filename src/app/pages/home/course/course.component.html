@@ -1,9 +1,14 @@
 <div class="card" style="width:300px">
     <img class="card-img-top" src="http://localhost:8894/rest-api/images/{{current.filename}}" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h4 class="card-title">{{current.modulename}}</h4>
+      <h4 class="card-title">{{current.modulename | uppercase}}</h4>
       <p class="card-text">{{current.description}}</p>
-      <h5 [style.color]="darkred" [style.fontFamily]="courier">Price: {{current.price}}</h5>
-      <h6 [style.color]="darkblue">Duration:: {{current.duration}} Hours</h6>
+      <div id="h5" [style.color]="'darkgray'" [style.fontFamily]="'courier'" [price]="current.price" >
+       Price::  {{current.price| discount |currency:"INR"}}
+       <span [ngStyle]="{'color':'gray','font-size': '10px'}">
+        <del>({{current.price | currency: 'INR'}})</del>
+      </span>
+        </div>
+      <h6 [style.color]="'darkblue'">Duration:: {{current.duration}} Hours</h6>
     </div>
   </div>
